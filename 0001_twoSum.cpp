@@ -5,7 +5,7 @@
 using namespace std;
 
 // unordered_map是C++标准中的哈希表实现的关联容器，用于存储键值对
-// unordered_map是常见操作，插入元素 'insert(key, value)','emplace(key, value)',删除元素'erase(key)'，查找元素'find(key)'
+// unordered_map是常见操作，插入元素 'insert(key, value)','emplace(key, value)',删除元素'erase(key)',查找元素'find(key)'
 
 vector<int> twoSum(vector<int> nums, int target) {
     unordered_map<int, int> numsmap;
