@@ -41,6 +41,7 @@ public:
                 if (is_sorted(nums.begin(), nums.end())) {
                     return true;
                 }
+                
                 nums[i] = x;
                 nums[i + 1] = x;
                 return is_sorted(nums.begin(), nums.end());
