@@ -9,8 +9,7 @@ def search(nums, target):
         else:
             return mid
     return -1
-
-
+    
 #n = int(input())
 nums = list(map(int, input().split()))
 
