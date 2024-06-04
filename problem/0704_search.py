@@ -17,3 +17,4 @@ nums = list(map(int, input().split()))
 target = int(input())
 result = search(nums, target)
 print(result)
+
