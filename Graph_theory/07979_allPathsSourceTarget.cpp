@@ -14,21 +14,21 @@ public:
 
 private:
     void dfs(vector<vector<int>>& graph, int curr, int target, vector<int>& path, vector<vector<int>>& result) {
-        path.push_back(curr); // ½«µ±Ç°½áµã¼ÓÈëÂ·¾¶
+        path.push_back(curr); // å°†å½“å‰ç»“ç‚¹åŠ å…¥è·¯å¾„
         if (curr == target) {
-            result.push_back(path); // Èç¹ûµ±Ç°½áµãÊÇÖÕµã£¬½«Â·¾¶¼ÓÈë½á¹û
+            result.push_back(path); // å¦‚æœå½“å‰ç»“ç‚¹æ˜¯ç»ˆç‚¹ï¼Œå°†è·¯å¾„åŠ å…¥ç»“æœ
         }
         else {
             for (int next : graph[curr]) {
-                dfs(graph, next, target, path, result); // µİ¹éÌ½Ë÷ÏÂÒ»¸ö½áµã
+                dfs(graph, next, target, path, result); // é€’å½’æ¢ç´¢ä¸‹ä¸€ä¸ªç»“ç‚¹
             }
         }
-        path.pop_back(); // »ØËİ£¬ÒÆ³ıµ±Ç°½áµã£¬³¢ÊÔÆäËûÂ·¾¶
+        path.pop_back(); // å›æº¯ï¼Œç§»é™¤å½“å‰ç»“ç‚¹ï¼Œå°è¯•å…¶ä»–è·¯å¾„
     }
 };
 
 
-// ²âÊÔº¯Êı
+// æµ‹è¯•å‡½æ•°
 int main() {
     Solution sol;
     vector<vector<int>> graph1 = { {1,2},{3},{3},{} };
